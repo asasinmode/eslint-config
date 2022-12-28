@@ -7,7 +7,7 @@
   "homepage": "https://github.com/asasinmode/eslint-config",
   "main": "index.js",
   "files": [
-    "index.js"
+    "*.js"
   ],
   "peerDependencies": {
     "eslint": ">=8.30.0"
