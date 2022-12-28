@@ -39,7 +39,6 @@ module.exports = {
             '@typescript-eslint/await-thenable': 'error',
             '@typescript-eslint/no-for-in-array': 'error',
             '@typescript-eslint/no-unnecessary-type-assertion': 'error',
-            '@typescript-eslint/no-unsafe-argument': 'error',
             '@typescript-eslint/no-unsafe-assignment': 'error',
             '@typescript-eslint/no-unsafe-call': 'error',
             '@typescript-eslint/no-unsafe-member-access': 'error',
@@ -49,15 +48,6 @@ module.exports = {
             '@typescript-eslint/restrict-plus-operands': 'error',
             '@typescript-eslint/restrict-template-expressions': 'error',
             '@typescript-eslint/unbound-method': 'error',
-          },
-        }, {
-          // https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/unbound-method.md
-          files: ['**/__tests__/**/*.ts', '**/*.spec.ts', '**/*.test.ts'],
-          plugins: ['jest'],
-          rules: {
-            // you should turn the original rule off *only* for test files
-            '@typescript-eslint/unbound-method': 'off',
-            'jest/unbound-method': 'error',
           },
         }],
   ),
