@@ -6,7 +6,7 @@
 
 - Almost a 1:1 copy of [Anthony Fu's eslint config]()
 - Curly braces around if blocks
-- Semicolons at the end
+- Semicolons
 - Padding lines around statements
 - Empty line before return
 - `tsconfig.json` to enable typescript rules
