@@ -1,6 +1,6 @@
 {
   "name": "@asasinmode/eslint-config-monorepo",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "packageManager": "pnpm@7.21.0",
   "description": "",
