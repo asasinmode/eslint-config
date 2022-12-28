@@ -1,0 +1,24 @@
+{
+  "name": "@asasinmode/eslint-config-vue",
+  "version": "0.1.0",
+  "description": "",
+  "author": "asasinmode <skin9470@gmail.com> (https://github.com/asasinmode/)",
+  "license": "MIT",
+  "homepage": "https://github.com/asasinmode/eslint-config",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "peerDependencies": {
+    "eslint": ">=8.30.0"
+  },
+  "dependencies": {
+    "@asasinmode/eslint-config-basic": "workspace:*",
+    "@asasinmode/eslint-config-ts": "workspace:*",
+    "eslint-plugin-vue": "^9.8.0",
+    "local-pkg": "^0.4.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.29.0"
+  }
+}
