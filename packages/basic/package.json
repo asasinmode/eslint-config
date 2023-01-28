@@ -1,6 +1,6 @@
 {
   "name": "@asasinmode/eslint-config-basic",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "",
   "author": "asasinmode <skin9470@gmail.com> (https://github.com/asasinmode/)",
   "license": "MIT",
@@ -13,7 +13,6 @@
     "eslint": ">=8.30.0"
   },
   "dependencies": {
-    "eslint-plugin-asasinmode": "workspace:*",
     "eslint-plugin-html": "^7.1.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsonc": "^2.5.0",
