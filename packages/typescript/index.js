@@ -54,8 +54,7 @@ module.exports = {
     'import/named': 'off',
 
     // TS
-    '@typescript-eslint/ban-ts-comment': ['error', { 'ts-ignore': 'allow-with-description' }],
-    '@typescript-eslint/member-delimiter-style': ['error', { multiline: { delimiter: 'none' } }],
+    '@typescript-eslint/member-delimiter-style': ['error', { singleline: { requireLast: true } }],
     '@typescript-eslint/type-annotation-spacing': ['error', {}],
     '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports', disallowTypeAnnotations: false }],
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
@@ -143,9 +142,6 @@ module.exports = {
     '@typescript-eslint/no-loss-of-precision': 'error',
     'lines-between-class-members': 'off',
     '@typescript-eslint/lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
-
-    // asasinmode
-    'asasinmode/generic-spacing': 'error',
 
     // off
     '@typescript-eslint/consistent-indexed-object-style': 'off',

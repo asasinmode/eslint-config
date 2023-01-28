@@ -8,7 +8,6 @@ module.exports = {
   extends: [
     './standard',
     'plugin:import/recommended',
-    'plugin:eslint-comments/recommended',
     'plugin:jsonc/recommended-with-jsonc',
     'plugin:yml/standard',
     'plugin:markdown/recommended',
@@ -35,8 +34,6 @@ module.exports = {
   plugins: [
     'html',
     'unicorn',
-    'asasinmode',
-    'no-only-tests',
   ],
   settings: {
     'import/resolver': {
@@ -148,22 +145,9 @@ module.exports = {
       },
     },
     {
-      files: ['*.ts', '*.tsx', '*.mts', '*.cts'],
-      rules: {
-        'no-void': ['error', { allowAsStatement: true }],
-      },
-    },
-    {
       files: ['scripts/**/*.*', 'cli.*'],
       rules: {
         'no-console': 'off',
-      },
-    },
-    {
-      files: ['*.test.ts', '*.test.js', '*.spec.ts', '*.spec.js'],
-      rules: {
-        'no-unused-expressions': 'off',
-        'no-only-tests/no-only-tests': 'error',
       },
     },
     {
@@ -211,9 +195,8 @@ module.exports = {
     'comma-dangle': ['error', 'always-multiline'],
     'no-constant-condition': 'warn',
     'no-debugger': 'error',
-    'no-console': ['error', { allow: ['warn', 'error'] }],
+    'no-console': ['warn', { allow: ['warn', 'error'] }],
     'no-cond-assign': ['error', 'always'],
-    'func-call-spacing': ['off', 'never'],
     'key-spacing': ['error', { beforeColon: false, afterColon: true }],
     'indent': ['error', 2, { SwitchCase: 1, VariableDeclarator: 1, outerIIFEBody: 1 }],
     'no-restricted-syntax': [
@@ -223,7 +206,7 @@ module.exports = {
       'WithStatement',
     ],
     'object-curly-spacing': ['error', 'always'],
-    'no-return-await': 'off',
+    'no-return-await': 'error',
     'space-before-function-paren': [
       'error',
       {
@@ -257,7 +240,6 @@ module.exports = {
         avoidQuotes: true,
       },
     ],
-    'prefer-exponentiation-operator': 'error',
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
     'prefer-template': 'error',
@@ -278,30 +260,17 @@ module.exports = {
 
     // best-practice
     'array-callback-return': 'error',
-    'block-scoped-var': 'error',
     'consistent-return': 'off',
-    'complexity': ['off', 11],
     'eqeqeq': ['error', 'smart'],
     'no-alert': 'warn',
     'no-case-declarations': 'error',
     'no-multi-spaces': 'error',
     'no-multi-str': 'error',
-    'no-with': 'error',
-    'no-void': 'error',
     'no-useless-escape': 'off',
-    'vars-on-top': 'error',
     'require-await': 'off',
     'no-return-assign': 'off',
     'operator-linebreak': ['error', 'before'],
     'max-statements-per-line': ['error', { max: 1 }],
-
-    // ensure spacing between statements
-    'padding-line-between-statements': [
-      'error',
-      { blankLine: 'always', prev: '*', next: 'return' },
-      { blankLine: 'always', prev: '*', next: 'if' },
-      { blankLine: 'always', prev: 'if', next: '*' },
-    ],
 
     // unicorns
     // Pass error message when throwing errors
@@ -328,7 +297,6 @@ module.exports = {
     'unicorn/throw-new-error': 'error',
 
     'no-use-before-define': ['error', { functions: false, classes: false, variables: true }],
-    'eslint-comments/disable-enable-pair': 'off',
     'import/no-named-as-default-member': 'off',
     'import/no-named-as-default': 'off',
     'import/namespace': 'off',
@@ -337,20 +305,12 @@ module.exports = {
     'sort-imports': [
       'error',
       {
-        ignoreCase: false,
         ignoreDeclarationSort: true,
-        ignoreMemberSort: false,
-        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
-        allowSeparatedGroups: false,
       },
     ],
 
     // yml
     'yml/quotes': ['error', { prefer: 'single', avoidEscape: false }],
     'yml/no-empty-document': 'off',
-
-    // asasinmode
-    'asasinmode/if-newline': 'error',
-    'asasinmode/import-dedupe': 'error',
   },
 };
