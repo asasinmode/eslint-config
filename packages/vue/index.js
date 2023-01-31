@@ -105,5 +105,10 @@ module.exports = {
 		'vue/space-infix-ops': 'error',
 		'vue/space-unary-ops': ['error', { words: true, nonwords: false }],
 		'vue/template-curly-spacing': 'error',
+
+		// indent
+		'vue/script-indent': ['error', 'tab'],
+		'vue/html-indent': ['error', 'tab'],
+		'vue/html-comment-indent': ['error', 'tab'],
 	},
 };
