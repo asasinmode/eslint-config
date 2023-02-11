@@ -192,7 +192,16 @@ module.exports = {
 		'camelcase': 'off',
 		'comma-spacing': ['error', { before: false, after: true }],
 		'comma-style': ['error', 'last'],
-		'comma-dangle': ['error', 'always-multiline'],
+		'comma-dangle': [
+			'error',
+			{
+				arrays: 'always-multiline',
+				objects: 'always-multiline',
+				imports: 'always-multiline',
+				exports: 'always-multiline',
+				functions: 'never',
+			},
+		],
 		'no-constant-condition': 'warn',
 		'no-debugger': 'error',
 		'no-console': ['warn', { allow: ['warn', 'error'] }],
